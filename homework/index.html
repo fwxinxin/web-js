@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="utf-8"/>
+    <title> 美丽说，发现、收藏、分享我的美丽点滴,让改变发生 </title>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+
+
+
+
+ </head>
+
+ <body>
+
+    <style>
+
+      body{
+            background-color: white;
+            color: #666;
+            font-size: 12px;
+            font-family: Arial;
+      }
+
+    
+      li { list-style-type: none;}
+
+      #weixin {background: url("../photo/weixin.jpg") left no-repeat; padding-left: 17px;}
+      #jiantouzuo{background: url("../photo/jiantouzuo.jpg") left no-repeat;}
+      #jiantouyou{background: url("../photo/jiantouyou.jpg") left no-repeat;}
+      #hotest{background: url("../photo/hotest.png") left no-repeat;}
+      #clothes{background: url("../photo/clothes.png") left no-repeat;}
+      #shoe{background: url("../photo/shoe.png") left no-repeat;}
+      #bag{background: url("../photo/bag.png") left no-repeat;}
+      #peishi{background: url("../photo/peishi.png") left no-repeat;}
+      #meibao{background: url("../photo/meibao.jpg") left no-repeat;}
+
+      a{
+        color: #666;
+        text-decoration: none;
+       }
+
+       h2 {display: block;font-size: 1.5em;}
+
+      .uinfo-bar{
+                  margin: 0px;
+                  padding: 0px;
+                  background-color: #F5F5F5;
+                  border-top: 1px solid #eee;
+                  border-bottom: 1px solid #eee;
+                  height: 38px;
+                  width: 100%;
+      }
+
+      .header_top {margin-left: 5%;margin-right: 5%;width: 90%;}
+
+      .menu-leo{
+                  float: right;
+                  height: 38px;
+                  width: 510px;
+                  margin: 0px;
+                  padding: 0px;
+                  display: inline;
+      }
+
+      .menu-leo>li{
+                    float: left;
+                    height: 38px;
+                    position: relative;
+                    z-index: 500;
+                    list-style-type: none;
+      }
+
+      .menu-leo>li>a{
+                      display: block;
+                      border-left: 1px dotted #ccc;
+                      height: 18px;
+                      line-height: 18px;
+                      margin-top: 10px;
+                      padding-left: 15px;
+                      padding-right: 15px;
+      }
+
+      a.first{border: 0px;}
+
+      .clear-f{
+                clear:both;
+                overflow: hidden;
+                height: 0;
+      }
+
+      .header_bg{
+        background: #fff;
+        margin-left:5%;
+        margin-right:5%;
+        padding: 15px 2% 15px 2%; 
+        width: 86%;
+        height: 36px;
+      }
+
+      .meiliphoto{
+        width: 106px;
+        height: 36px;
+        margin-right: 13px;
+        float: left;
+        background:#fff url("../photo/meilishuo.png") no-repeat ;
+      }
+
+      .sousuo{
+        border: 2px solid #f69;
+        display: inline;
+        background: #fff;
+        float: left;
+        height: 30px;
+        left: 50%;
+        margin-left: -240px;
+        margin-top: 2px;
+        position: absolute;
+        width: 460px;
+        z-index: 450;
+      }
+
+      .cur{
+        float: left;
+        border: 1px solid #f5f5f5;
+        border-right-color: #e6e6e6;
+        width: 68px;
+        background-color: #f5f5f5;
+        line-height: 28px;
+        position: relative;
+        text-align: center;
+      }
+
+      .ipt1{
+        height: 30px;
+        overflow: hidden;
+        float: left;
+        position: relative;
+        width: 300px;
+      }
+      
+      .ipt2{
+        background-color: #f69;
+        height: 30px;
+        overflow: hidden;
+        float: left;
+        width: 90px;
+      }
+
+      .ipt2 input{
+        background: 0;
+        border: 0;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        height: 30px;
+        width: 90px;
+      }
+
+      .inp{
+        height: 24px;
+        border: 0;
+        line-height: 24px\9;
+        font-size: 12px;
+        margin-top: 3px;
+        color: #999;
+        width: 265px;
+      }
+
+      .cart_info {
+        float: right;
+        padding-top: 2px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .cart_info li {
+        background-color: #f5f5f5;
+        border: 1px solid #e6e6e6;
+        display: inline;
+        margin-left: 10px;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 8px;
+        padding-right: 8px;
+        position: relative;
+      }
+
+      #navbar{ width: 100%;z-index: 400;}
+
+     .wheader {
+      background-color: #ff6599;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      margin-left: 0;
+      margin-right:0;
+      position: relative;
+      }
+
+      .header_b {
+        height: 40px;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
+      .nav_new {margin:0 auto;height: 0;list-style: none}
+
+      .nav_new li{
+        font-size: 13px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        position: relative;
+        z-index: 450;
+      }
+
+      .nav_new li>a{color: #fff;float: left;padding-left: 14px;padding-right: 14px;}
+
+      .nav_new li>a:hover{background-color:#ed3577}
+
+      .nav_new .r_d{background-color: #ed3577;}
+
+
+      .top_bnr {
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #e6e6e6;
+        height: 419px;
+        overflow: hidden;
+        float: left;;
+        width: 100%;
+      }
+
+      #banner {
+        height: 419px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        overflow: hidden;
+
+      }
+
+      .top_bnr>li>a .pic {
+        height: 419px;
+        width: 100%;
+
+      }
+
+      #banner li{
+        overflow: hidden;
+        text-align: center;
+      }
+      #banner li img{
+        position: relative;
+        left: 50%;
+        margin-left: -1350px;
+
+      }
+
+      .top_wrap .banner1 {
+        height: 420px;
+        width: 200px;
+        overflow: hidden;
+        position: absolute;
+        right: 140px;
+      }
+
+      .banner1 li {
+        float: left;
+        width: 100%;
+      }
+
+      .round {
+        width: 440px;
+        position: absolute;
+        right: 225px;
+        top: 390px;
+        left: 400px;
+      }
+
+      #adType{text-align: right;}
+
+      #adType li{
+        color:white;
+        background: #fff;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 22px;
+        height: 10px;
+        width: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #adType li.round1 {
+        background: transparent;
+        border: 2px solid #fff;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: -2px;
+        height: 10px;
+        width: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+
+
+      .pic {display: block;height: 100%;width: 100%;}
+
+      .top_wrap {
+        margin-left: 149.5px;
+        margin-right: 149.5px;
+        width: 1200px;
+      }
+
+      .top_box {position: relative;width: 1200px;}
+
+      .bnr_btn_wrap {position: absolute;top:200px;}
+
+      .bnr_btn {
+        width: 100px;
+        height: 44px;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .bnr_btn_left {left: 220px;}
+      .bnr_btn_right {left:825px; }
+
+      .attr_box {width: 200px;height: 574px;position: absolute;left}
+
+      .sec_attr {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border: 1px solid #e6e6e6;
+        float: left;
+        height: 572px;
+        width: 218px;
+      }
+
+      .list {position: relative;border-bottom: 1px dotted #ccc;height: 113px;margin-left: 20px;margin-right: 20px;
+      }
+
+      .list_cont {position: relative;height: 95px;z-index: 8;padding: 12px 0 6px;
+      }
+
+      .aaa {height: 18px;font-size: 14px;margin: 0;}
+
+      .aaa a {color: #f69;}
+
+      .nav_ico {float: left;height: 18h: 23px;}
+
+      .listP {
+        height: 72px;
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-top: 5px;
+        width: 190px;
+      }
+
+      .corner {
+        font-size: 14px;
+        color: #999;
+        position: absolute;
+        right: -5px;
+        top: 48px;
+      }
+
+      .last {border-bottom: 0;height: 116px;}
+      .list_cont_last {padding-bottom: 9px;}
+
+      .bnr_box {
+        height: 144px;
+        width: 990px;
+        position: absolute;
+        right: 0;
+        top: 580px;
+        left: 325px;
+      }
+
+      .pic_attr {
+        float: left;
+        height: 144px;
+        padding-left: 1px;
+        width: 759px;
+        margin: 0px auto;
+      }
+
+      .pic_attr li {
+        margin-left: 10px;
+        display: inline;
+        width: 160px;
+        border: 1px solid #e6e6e6;
+        float: left;
+        overflow: hidden;
+        height: 142px;
+      }
+
+      .auto_wrap {
+        overflow: hidden;
+        margin-left:5%;
+        margin-right:5%;
+        width: 90%;
+      }
+
+      .wel_tle {
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 14px;
+        overflow: hidden;
+        width: 100%;
+        height: 32px;
+        margin-top: 20px;
+      }
+
+      .tle {float: left;text-indent: -999em;width: 78px;}
+
+      .bbb{
+        margin-top: 0;
+        padding-left: 0;
+        overflow: hidden;        
+        border-top:  1px solid #e6e6e6;
+        width: 100%;
+      }
+
+      .bbb li{
+        margin-top: 12px;
+        float: left;
+        display: inline;
+        margin-right: 13px;
+        width: 180px;
+      }
+
+      .pic_Box{
+        height: 255px;
+        width: 20%;
+        display: block;
+        overflow: hidden;
+      }
+
+      .s_pic{
+        height: 255px;
+        width: 17%;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+      }
+
+      .txt{
+        display: block;
+        height: 36px;
+        line-height: 18px;
+        overflow: hidden;
+        margin: 6px 0 5px;
+        width: 100%;
+      }
+
+      .txt>a:hover {color: #f69;}
+
+      .price_box{border-bottom: 1px dotted #ccc;padding-bottom: 8px;margin-bottom: 8px;}
+
+      .price_red {color: #f69;font-size: 16px;}
+      .price_grey{color: #999;text-decoration: line-through;padding-left: 5px;}
+
+      .auto_wrap_2 {
+        overflow: hidden;
+        margin-left:5%;
+        margin-right:5%;
+        width: 90%;
+        height: 85px;
+      }
+
+      .cmn_title {
+        height: 18px;
+        line-height: 18px;
+        margin-right: auto;
+        overflow: hidden;
+      }
+
+      .mt20_f {margin-top: 20px;}
+
+      .cmn_title p {float: right;}
+      .f14_f {font-size: 13px;margin: 0;}
+
+      .word {border-right: 1px dotted #ccc;padding: 0 13px;}
+
+      .ml10_f {margin-left: 10px;}
+
+      .groupBox {float: left;margin-right: 11px;width: 228px;height: 299px;}
+
+      .groupCon {
+        background: #fff;
+        border: 1px solid #ddd;
+        margin-top: 14px;
+        width: 226px;
+        height: 283px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gc_title {
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        padding: 10px 13px 0;
+      }
+
+       h4 {
+        margin: 0;
+        font-size: 13px;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        overflow: ellipsis;
+        width: 140px;
+      }
+
+      .imgBox {
+        margin-top: 5px;
+        display: block;
+        width: 200px;
+        margin-left: 13px;
+        margin-right: 13px;
+        height: 204px;
+      }
+
+      .maxpic {margin-top: 4px;height: 200px;width: 200px;}
+
+      .lookBox {height: 20px;padding: 13px;}
+
+      .btn {
+        border-radius: 3px;
+        cursor: pointer;
+        text-align: center;
+        background: #f69;
+        color: #fff;
+        float: right;
+        height: 20px;
+        line-height: 20px;
+        width: 64px;
+      }
+
+      .tex {color: #999;line-height: 20px;}
+
+      .auto_wrap {
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 1200px;
+      }
+
+
+
+    </style>
+
+
+
+    <div class="uinfo-bar">
+      <div class="header_top">
+     
+         <ul class="menu-leo">
+           <li>
+              <a class="first" id="weixin" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx28b165b5a629bb11&redirect_uri=http%3A%2F%2Fm.meilishuo.com%2Fwx%2FconnectWeb&response_type=code&scope=snsapi_login&state=mls#wechat_redirect" target="_blank">微信登陆</a></li>
+           <li>
+              <a href="http://openapi.qzone.qq.com/oauth/show?which=Login&display=pc&client_id=210915&redirect_uri=http%3A%2F%2Fwww.meilishuo.com%2Fconnect%2Fauth%2Fqzone&response_type=code&scope=do_like%2Cget_user_info%2Cget_info%2Cadd_share%2Cadd_topic%2Cadd_t%2Cadd_album%2Clist_album%2Cupload_pic%2Ccheck_page_fans%2Cget_fanslist%2Cnotify_tasksys%2Cadd_idol&state=058dedab226dbdb231f11fcdb05c45e1&display=" target="_blank">QQ登陆</a></li>
+           <li>
+              <a href="https://account.meilishuo.com/user/login" target="_blank">登陆</a></li>
+           <li>
+              <a href="https://account.meilishuo.com/user/register" target="_blank">注册</a></li>
+           <li>
+              <a href="http://www.meilishuo.com/member/membert" target="_blank">积分兑换</a></li>
+           <li>
+              <a href="http://www.meilishuo.com/client/?frm=daeh" target="_blank">下载App</a></li>
+           <li>
+              <a href="http://www.meilishuo.com/help/feedback?frm=top_to_help" target="_blank">客户服务</a></li>
+         </ul>
+
+         <div class="clear-f"></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="header_bg">
+
+        <a class="meiliphoto"></a>
+      
+        <div class="sousuo" > 
+
+            <span class="cur" data-type="1">宝贝</span>
+            <span class="ipt1" ><input class="inp" type="text" name="goods"></span>
+            <span class="ipt2"><input type="submit" value="搜索"></span>
+        </div>
+
+        <ul class="cart_info">
+          <li>
+            <a href="http://order.meilishuo.com/cart" target="_blank">查看购物车</a></li>
+          <li>
+            <a href="https://account.meilishuo.com/user/login?_or=aCMerSwF7prVJjYPQj3%2BKfo6Llf7mcQ9CB6v9qPDDaI%3D" target="_blank">我的订单</a></li>
+        </ul>  
+
+    </div>
+    
+
+
+    <div id="navbar" style="position:relative;top:0px;height:auto;">
+      <div class="wheader">
+        <div class="header_b">
+          <ul class="nav_new">
+            <li><a class="r_d" href="http://www.meilishuo.com/welcome?frm=360_mingzhan" target="_blank">首页</a></li>
+            <li><a href="http://www.meilishuo.com/guang/hot?frm=daeh" target="_blank">今日最热</a></li>
+            <li><a href="http://www.meilishuo.com/guang/catalog/dress?nid=17&cata_id=2001000000000&frm=daeh" target="_blank">衣服</a></li>
+            <li><a href="http://www.meilishuo.com/guang/catalog/shoes?nid=13&cata_id=6000000000000&frm=daeh" target="_blank">鞋子</a></li>
+            <li><a href="http://www.meilishuo.com/guang/catalog/bag?nid=15&cata_id=5000000000000&frm=daeh" target="_blank">包包</a></li>
+            <li><a href="http://www.meilishuo.com/guang/catalog/access?nid=1097&cata_id=7000000000000&frm=daeh" target="_blank">配饰</a></li>
+            <li><a href="http://www.meilishuo.com/beauty?frm=daeh" target="_blank">美妆</a></li>
+            <li><a href="http://www.meilishuo.com/biz/shareact/list/?frm=daeh" target="_blank">特卖</a></li>
+            <li><a href="http://www.meilishuo.com/tuan/?frm=daeh" target="_blank">团购</a></li>
+            <li><a href="http://www.meilishuo.com/shop/?frm=daeh" target="_blank">好店</a></li>
+            <li><a href="http://www.meilishuo.com/magazine?frm=daeh" target="_blank">杂志</a></li>
+            <li><a href="http://www.meilishuo.com/club?frm=daeh" target="_blank">爱美丽Club</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="top_bnr">
+      <ul id="banner" >
+        <li>
+          <a class="pic" href="http://promotion.meilishuo.com/promotion/sale_141220/act1225/?hdtrc=christmas1222_welcomefocusbanner&amp;pstrc=fe_pos%3Awlc_banner_top_0" target="_blank">
+          <img src="../photo/zhongjidacu.jpg"/> 
+          </a>
+        </li>
+
+        <li>
+          <a class="pic" href="http://www.meilishuo.com/activity/tuan/tg512/?event_id=1315&amp;hdtrc=tuan1315_welcomeFocusBanner&amp;pstrc=fe_pos%3Awlc_banner_top_1" target="_blank">
+            <img src="../photo/tuangouguan.jpg"/>
+          </a>
+        </li>
+
+        <li>
+          <a class="pic" id="background3" href="http://www.meilishuo.com/biz/beauty/saleDay/?cid=4971&amp;hdtrc=mz1222_4971_welcomefocusbanner&amp;pstrc=fe_pos%3Awlc_banner_top_2" target="_blank">
+            <img src="../photo/hufuguan.jpg"/>
+          </a>
+        </li>
+
+        <li>
+          <a class="pic" id="background4" href="http://promotion.meilishuo.com/promotion/sale_141220/act_list/?cid=5155&amp;pid=496&amp;hdtrc=main24pc_yifu496_welcomefocusbanner&amp;pstrc=fe_pos%3Awlc_banner_top_3" target="_blank" >
+            <img src="../photo/meiyiguan.jpg"/>
+          </a>
+        </li>     
+      </ul>
+    </div>
+
+
+
+
+    <div class="top_wrap">
+
+      <div class="top_box">
+        
+
+        <div class="bnr_btn_wrap">
+          <span class="bnr_btn bnr_btn_left" id="jiantouzuo" style="diplay:inline"></span>
+          <span class="bnr_btn bnr_btn_right" id="jiantouyou" style="diplay:inline"></span>
+        </div>
+
+
+        <div class="attr_box">
+          <ul class="sec_attr">
+
+
+            <li class="list">
+
+              <div class="list_cont">
+                <h3 class="aaa">
+                  <a href="http://www.meilishuo.com/guang/hot?pstrc=fe_pos%3Awlc_attr_0" target="_blank">
+                    <span class="nav_ico" id="hotest"></span>最热</a>
+                </h3>
+                <p class="listp">秋季热推新款&nbsp超人气套装</p>
+                <p class="listp">连衣裙&nbsp活力运动鞋&nbsp新款靴子</p>
+                <p class="listp">单肩包&nbsp秋款潮裤&nbsp秀恩爱必备</p>
+                <samp class="corner">></samp>
+              </div>
+
+            </li>
+
+
+            <li class="list">
+              <div class="list_cont">
+                <h3 class="aaa">
+                  <a href="http://www.meilishuo.com/guang/catalog/dress?nid=11&wn=衣服&cata_id=2000000000000&pstrc=fe_pos%3Awlc_attr_1" target="_blank">
+                    <span class="nav_ico" id="clothes"></span>衣服</a>
+                </h3>
+                <p class="listp">卫衣&nbsp小脚裤&nbsps风衣&nbsp开衫</p>
+                <p class="listp">牛仔裤&nbsp长袖连衣裙&nbsp半身裙</p>
+                <p class="listp">打底裤&nbsp衬衫&nbsp秋季美裙</p>
+                <samp class="corner">></samp>
+              </div>
+            </li>
+
+
+            <li class="list">
+              <div class="list_cont">
+                <h3 class="aaa">
+                  <a href="http://www.meilishuo.com/guang/catalog/shoes?nid=13&wn=鞋子&cata_id=6000000000000&pstrc=fe_pos%3Awlc_attr_2" target="_blank">
+                    <span class="nav_ico" id="shoe"></span>鞋子</a>
+                </h3>
+                <p class="listp">靴子&nbsp运动鞋&nbsp单鞋&nbsp高跟鞋</p>
+                <p class="listp">早秋美鞋&nbsp帆布鞋&nbsp短靴</p> 
+                <p class="listp">平底鞋&nbsp优质热销鞋履&nbsp尖头鞋</p>
+                <samp class="corner">></samp>
+              </div>
+            </li>
+
+
+            <li class="list">
+              <div class="list_cont">
+                <h3 class="aaa">
+                  <a href="http://www.meilishuo.com/guang/catalog/bag?nid=15&wn=包包&cata_id=5000000000000&pstrc=fe_pos%3Awlc_attr_3" target="_blank">
+                    <span class="nav_ico" id="bag"></span>包包</a>
+                </h3>
+                <p class="listp">2014秋季新款&nbsp双肩包&nbsp行李箱</p>
+                <p class="listp">超高人气必败潮包&nbsp大包&nbsp钱包</p> 
+                <p class="listp">单肩包&nbsp手提包&nbsp小包&nbsp斜挎包</p>
+                <samp class="corner">></samp>
+              </div>
+            </li>
+
+
+            <li class="list last">
+              <div class="list_cont list_cont_last">
+                <h3 class="aaa">
+                  <a href="http://www.meilishuo.com/guang/catalog/access?nid=1097&wn=配饰&cata_id=7000000000000&pstrc=fe_pos%3Awlc_attr_4" target="_blank">
+                    <span class="nav_ico" id="peishi"></span>配饰</a>
+                </h3>
+                <p class="listp">项链&nbsp帽子&nbsp耳钉&nbsp手链</p>
+                <p class="listp">发箍&nbsp戒指&nbsp手表&nbsp手机壳</p> 
+                <p class="listp">连裤袜&nbsp买手精选榜&nbsp袜子&nbsp丝巾</p>
+                <samp class="corner">></samp>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+        <div class="banner1">
+          </a>
+          <a href="http://www.meilishuo.com/tuan?pstrc=fe_pos%3Awlc_bnr_right_0" target="_blank">
+            <img src="../photo/jinrituangou.jpg">
+          </a>
+          <a href="http://www.meilishuo.com/biz/shareact/beautySale/?ac_id=1561&page=0&od=po&hdtrc=tm1561_welcomeFocusLeftBanner&pstrc=fe_pos%3Awlc_bnr_right_1" target="_blank">
+            <img src="../photo/wanmeihanzhuang.jpg">
+          </a>
+          <a href="http://www.meilishuo.com/shop/103509?pstrc=fe_pos%3Awlc_bnr_right_2" target="_blank">
+            <img src="../photo/doupeng.jpg">
+          </a>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="round">
+          <ul id="adType">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+          </div>
+
+        </div>
+
+        <script>
+          
+
+          var s=document.getElementById("adType").getElementsByTagName("li"); 
+          var images=document.getElementById("banner").getElementsByTagName("li");
+
+          for(var i=0;i<s.length;i++)
+          {
+            var s_item=s[i];
+            s[i].index=i;
+            var index=0;
+            s_item.onclick=function()
+            {
+              
+              for(var j=0;j<images.length;j++)
+              {
+                images[j].style.display="none";
+                s[j].className="";
+              }
+              images[this.index].style.display="";
+              s[this.index].className="round1";
+            }
+          };
+
+          function show()
+          {
+            for(var j=0;j<images.length;j++)
+            {
+              images[j].style.display="none";
+              s[j].className="";
+            }
+            images[this.index].style.display="";
+            s[this.index].className="round1";
+            index=index==images.length-1?0:index+1;
+          }
+          show();
+          var auto=setInterval(show,2000);
+          var ss=document.getElementById("banner");
+          ss.onmouseover=function(){
+            clearInterval(auto);
+          };
+          ss.onmouseout=function(){
+            auto=setInterval(show,2000);
+          }
+
+          function show1(n){
+            for(var j=0;j<images.length;j++){
+              images[j].style.display="none";
+              s[j].className="";
+            }
+            images[n].style.display="";
+            s[n].className="round1";
+          }
+
+
+
+
+
+
+          function jiantou(flag){
+            index=this.index;
+            if(!flag){
+              index++;
+              if(index>(images.length-1)){index=0;}
+            }
+            else{
+              index--;
+              if(index<0){index=images.length-1;}
+
+            }
+            show1(index);
+          }
+
+          jiantouzuo.onclick=function(){jiantou(true);}
+          jiantouyou.onclick=function(){jiantou(false);}
+
+
+        </script>
+
+
+
+
+
+
+
+
+        <div class="bnr_box">
+          <ul class="pic_attr">
+            <li>
+              <a href="http://www.meilishuo.com/guang/popular?pstrc=fe_pos%3Awlc_bnr_ct_0">
+                <img src="../photo/rexiaobang.jpg" target="_black">
+              </a>
+            </li>
+            <li>
+              <a href="http://www.meilishuo.com/guang/hot?pstrc=fe_pos%3Awlc_bnr_ct_1">
+                <img src="../photo/liuxingbang.jpg" target="_black">
+              </a>
+            </li>
+            <li>
+              <a href="http://www.meilishuo.com/guang/new?pstrc=fe_pos%3Awlc_bnr_ct_2">
+                <img src="../photo/shangxinbang.jpg" target="_black">
+              </a>
+            </li>
+            <li>
+              <a href="http://www.meilishuo.com/activity/fashion/list/?pstrc=fe_pos%3Awlc_bnr_ct_3">
+                <img src="../photo/zhuantibang.jpg" target="_black">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <div style="height:580px"></div>
+
+
+    <div class="auto_wrap">
+      <div class="wal_tle">
+        <img src="../photo/danpin.jpg"/>    
+      </div>
+
+      <ul class="bbb">
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/3202176961?pstrc=fe_pos%3Awlc_rec_0" target="_black">
+              <img src="../photo/renqi1.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/3202176961?pstrc=fe_pos%3Awlc_rec_0" target="_black">原创双肩包 领券再减5元质量棒</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥157.95</span>
+            <span class="price_grey">￥585.00</span>
+          </p>
+          <p>149人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/3199037543?pstrc=fe_pos%3Awlc_rec_1" target="_black">
+              <img src="../photo/renqi2.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/3199037543?pstrc=fe_pos%3Awlc_rec_1" target="_black">小清新海毛打底衫 限时4折优惠</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥69.29</span>
+            <span class="price_grey">￥169.00</span>
+          </p>
+          <p>1532人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/3203821637?pstrc=fe_pos%3Awlc_rec_2" target="_black">
+              <img src="../photo/renqi3.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/3203821637?pstrc=fe_pos%3Awlc_rec_2" target="_black">3.8折厚底长靴 时尚又保暖</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥109.00</span>
+            <span class="price_grey">￥2909.00</span>
+          </p>
+          <p>154人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/3168864609?pstrc=fe_pos%3Awlc_rec_3" target="_black">
+              <img src="../photo/renqi4.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/3168864609?pstrc=fe_pos%3Awlc_rec_3" target="_black">长腿尽现舒适小脚裤 4折限时抢购ing</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥67.60</span>
+            <span class="price_grey">￥169.00</span>
+          </p>
+          <p>1890人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/3203793709?pstrc=fe_pos%3Awlc_rec_4" target="_black">
+              <img src="../photo/renqi5.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/3203793709?pstrc=fe_pos%3Awlc_rec_4" target="_black">5折免运费 加绒保暖休闲连衣裙</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥78.00</span>
+            <span class="price_grey">￥156.00</span>
+          </p>
+          <p>1657人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/3129336535?pstrc=fe_pos%3Awlc_rec_5" target="_black">
+              <img src="../photo/renqi6.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/3129336535?pstrc=fe_pos%3Awlc_rec_5" target="_black">7折流苏大披肩 5色包邮任选</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥59.5</span>
+            <span class="price_grey">￥85.00</span>
+          </p>
+          <p>1002人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_6" target="_black">
+              <img src="../photo/renqi7.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_6">实现零毛孔！石泽研究所 毛孔抚子洁面粉洗颜粉 100g</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥108.00</span>
+            <span class="price_grey">￥128.00</span>
+          </p>
+          <p>529人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_7" target="_black">
+              <img src="../photo/renqi8.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_7">让手部重现婴儿般柔嫩，番茄派 手部SPA美白套装</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥38.00</span>
+            <span class="price_grey">￥143.00</span>
+          </p>
+          <p>277人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_8" target="_black">
+              <img src="../photo/renqi9.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_8">韩剧女主的最爱！3CE 粉质滋润哑光口红</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥77.00</span>
+            <span class="price_grey">￥243.00</span>
+          </p>
+          <p>1267人已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_9" target="_black">
+              <img src="../photo/renqi10.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_9">深层补水，极致保湿，丽得姿 美蒂优持久补水面膜5片</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥40.00</span>
+            <span class="price_grey">￥125.00</span>
+          </p>
+          <p>2075已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_10" target="_black">
+              <img src="../photo/renqi11.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_10">《越淘越开心》力荐！水理肌 柔滑保湿面膜25片</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥69.00</span>
+            <span class="price_grey">￥360.00</span>
+          </p>
+          <p>1877已购买</p>
+        </li>
+
+        <li>
+          <div class+"s_picBox">
+            <a class="s_pic" href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_11" target="_black">
+              <img src="../photo/renqi12.jpg"/>
+            </a>
+          </div>
+          
+          <p class="txt">
+            <a href="http://www.meilishuo.com/share/item/2499246883?pstrc=fe_pos%3Awlc_rec_11">经典热销，魅惑猫眼~迪奥 媚丽精致眼线液 4ml</a>
+          </p>
+          
+          <p class="price_box">
+            <span class="price_red">￥37.00</span>
+            <span class="price_grey">￥98.00</span>
+          </p>
+          <p>940已购买</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="auto_wrap_2" id="meibao">
+    </div>
+
+    <div class="auto_wrap">
+      <div class="cmn_title mt20_f" style="height:22px;">
+        <p class="f14_f">
+          <a class="word">欧美</a>
+          <a class="word">甜美</a>
+          <a class="word">复古</a>
+          <a class="word">个性</a>
+          <a class="word">日系</a>
+          <a class="word">其他</a>
+          <a class="m110_f">更多杂志
+            <samp>></samp>
+          </a>
+        </p>
+      </div>
+
+
+      <div class="groupBox">
+        <div  class="groupCon">
+
+          
+
+          <div class="gc_title">
+            <h4>
+              <a>小女人有恋物癖</a>
+            </h4>
+          </div>
+
+          
+
+          <a href="http://www.meilishuo.com/group/13015234?pstrc=fe_pos%3Awlc_mgz_info_0" target="_black" class="imgBox">
+            <img src="../photo/a1.jpg" class="maxpic"/>
+          </a>
+
+          
+          <div class="lookBox">
+            <a class="btn">去看看</a>
+            <span class="tex">866个分享</span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="groupBox">
+        <div  class="groupCon">
+
+          
+
+          <div class="gc_title">
+            <h4>
+              <a>怪诞文艺腔</a>
+            </h4>
+          </div>
+
+          
+
+          <a href="http://www.meilishuo.com/group/10765?pstrc=fe_pos%3Awlc_mgz_info_1" target="_black" class="imgBox">
+            <img src="../photo/a2.jpg" class="maxpic"/>
+          </a>
+
+          
+          <div class="lookBox">
+            <a class="btn">去看看</a>
+            <span class="tex">2361个分享</span>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="groupBox">
+        <div  class="groupCon">
+
+          
+
+          <div class="gc_title">
+            <h4>
+              <a>每个人有他的脾气</a>
+            </h4>
+          </div>
+
+          
+
+          <a href="http://www.meilishuo.com/group/15057745?pstrc=fe_pos%3Awlc_mgz_info_2" target="_black" class="imgBox">
+            <img src="../photo/a3.jpg" class="maxpic"/>
+          </a>
+
+          
+          <div class="lookBox">
+            <a class="btn">去看看</a>
+            <span class="tex">234个分享</span>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="groupBox">
+        <div  class="groupCon">
+
+          
+
+          <div class="gc_title">
+            <h4>
+              <a>craft</a>
+            </h4>
+          </div>
+
+          
+
+          <a href="http://www.meilishuo.com/group/45052983?pstrc=fe_pos%3Awlc_mgz_info_3" target="_black" class="imgBox">
+            <img src="../photo/a4.jpg" class="maxpic"/>
+          </a>
+
+          
+          <div class="lookBox">
+            <a class="btn">去看看</a>
+            <span class="tex">1261个分享</span>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="groupBox">
+        <div  class="groupCon">
+
+          
+
+          <div class="gc_title">
+            <h4>
+              <a>小宅</a>
+            </h4>
+          </div>
+
+          
+
+          <a href="http://www.meilishuo.com/group/15375870?pstrc=fe_pos%3Awlc_mgz_info_4" target="_black" class="imgBox">
+            <img src="../photo/a5.jpg" class="maxpic"/>
+          </a>
+
+          
+          <div class="lookBox">
+            <a class="btn">去看看</a>
+            <span class="tex">374个分享</span>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+                 
+</body>
